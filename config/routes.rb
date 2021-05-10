@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get 'homes' => 'homes#top', as: 'top'
   patch'books/:id' => 'books#update', as: 'update'
   delete'books/:id' => 'books#destroy', as: 'destroy'
+  root to: 'homes#top'
 end
